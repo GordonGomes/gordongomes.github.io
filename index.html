@@ -1,81 +1,385 @@
-<img align="right" width="280" src="https://github.com/yourusername/yourusername/blob/main/assets/profile-banner.png?raw=true" alt="Gordon Gomes - Cybersecurity">
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <meta name="description" content="Gordon Gomes - Junior Penetration Tester | AI-Driven Cybersecurity | IoT Security | Panjim, Goa"/>
+  <title>Gordon Gomes | Cybersecurity & AI Security</title>
 
-# Hi, I'm **Gordon Antonio Erasmo Gomes** 👋  
-**Junior Penetration Tester | AI-Driven Cybersecurity | IoT Security**  
-📍 Panjim, Goa, India  
-📧 [gordon.gomes777@gmail.com](mailto:gordon.gomes777@gmail.com) | [+91 9168585974](tel:+919168585974)  
-🔗 [LinkedIn](https://linkedin.com/in/yourprofile) | [TryHackMe](https://tryhackme.com/p/yourhandle) | [Credly](https://credly.com/users/yourprofile)
+  <!-- Favicon -->
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>🔐</text></svg>">
 
----
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
 
-### 🚀 Professional Summary
-Cybersecurity professional with **hands-on expertise** in **wireless & network penetration testing**, **vulnerability assessment**, and **AI-driven threat detection**. Proficient in **Nmap, Metasploit, Burp Suite**, and securing **IoT systems**. Passionate about optimizing **LLMs for cybersecurity** and building secure web applications.
+  <!-- Icons -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"/>
 
-Currently a **Penetration Tester** at **Hoarus Consultancy Pvt. Ltd.** (2023–Present).
+  <style>
+    /* === RESET & BASE === */
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+    :root {
+      --bg: #0d1117;
+      --bg-alt: #161b22;
+      --text: #f0f6fc;
+      --text-muted: #8b949e;
+      --accent: #58a6ff;
+      --accent-hover: #1f6feb;
+      --success: #238636;
+      --border: #30363d;
+      --radius: 12px;
+      --shadow: 0 8px 32px rgba(0,0,0,0.3);
+      --transition: all 0.3s ease;
+    }
+    [data-theme="light"] {
+      --bg: #ffffff;
+      --bg-alt: #f6f8fa;
+      --text: #24292f;
+      --text-muted: #57606a;
+      --accent: #0969da;
+      --accent-hover: #1f6feb;
+      --border: #d0d7de;
+      --shadow: 0 8px 24px rgba(140,149,159,0.2);
+    }
+    body {
+      font-family: 'Inter', sans-serif;
+      background: var(--bg);
+      color: var(--text);
+      line-height: 1.7;
+      transition: var(--transition);
+    }
+    a { color: var(--accent); text-decoration: none; }
+    a:hover { color: var(--accent-hover); }
+    .container { max-width: 1100px; margin: 0 auto; padding: 0 1.5rem; }
+    section { padding: 4rem 0; }
+    h1, h2, h3, h4 { font-weight: 600; line-height: 1.3; }
+    h1 { font-size: 2.8rem; }
+    h2 { font-size: 2rem; margin-bottom: 1.5rem; border-bottom: 2px solid var(--accent); padding-bottom: 0.5rem; display: inline-block; }
+    .btn {
+      display: inline-block;
+      padding: 0.75rem 1.5rem;
+      background: var(--accent);
+      color: white;
+      border-radius: var(--radius);
+      font-weight: 500;
+      transition: var(--transition);
+      text-align: center;
+    }
+    .btn:hover { background: var(--accent-hover); transform: translateY(-2px); }
+    .btn-outline {
+      background: transparent;
+      border: 2px solid var(--accent);
+      color: var(--accent);
+    }
+    .btn-outline:hover { background: var(--accent); color: white; }
 
----
+    /* === HEADER === */
+    header {
+      background: var(--bg-alt);
+      border-bottom: 1px solid var(--border);
+      position: sticky;
+      top: 0;
+      z-index: 100;
+      backdrop-filter: blur(10px);
+    }
+    nav {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 1rem 0;
+    }
+    .logo { font-size: 1.5rem; font-weight: 700; color: var(--accent); }
+    .nav-links { display: flex; gap: 2rem; }
+    .nav-links a { font-weight: 500; }
+    .theme-toggle {
+      background: none;
+      border: none;
+      font-size: 1.3rem;
+      cursor: pointer;
+      color: var(--text-muted);
+    }
 
-### 🛠️ Technical Proficiencies
-| Category | Tools & Tech |
-|--------|--------------|
-| **Cybersecurity** | Nmap, Metasploit, Burp Suite, Wireshark, OWASP ZAP |
-| **Programming** | Python, C, HTML, CSS, JavaScript |
-| **AI/ML Frameworks** | TensorFlow, PyTorch, Hugging Face, Weights & Biases |
-| **Standards** | NIST CSF, MITRE ATT&CK, OWASP Top 10 |
-| **Domains** | Pen Testing, Wireless Security, IoT, LLM Optimization |
+    /* === HERO === */
+    .hero {
+      padding: 6rem 0;
+      text-align: center;
+      background: linear-gradient(135deg, var(--bg-alt) 0%, var(--bg) 100%);
+    }
+    .hero h1 { margin-bottom: 1rem; }
+    .hero p { font-size: 1.2rem; color: var(--text-muted); max-width: 700px; margin: 0 auto 2rem; }
+    .social-links {
+      display: flex;
+      justify-content: center;
+      gap: 1rem;
+      margin: 2rem 0;
+    }
+    .social-links a {
+      width: 44px;
+      height: 44px;
+      background: var(--bg-alt);
+      border: 1px solid var(--border);
+      border-radius: 50%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 1.2rem;
+      transition: var(--transition);
+    }
+    .social-links a:hover { background: var(--accent); color: white; border-color: var(--accent); }
 
----
+    /* === GRID LAYOUT === */
+    .grid { display: grid; gap: 2rem; }
+    .grid-2 { grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); }
+    .card {
+      background: var(--bg-alt);
+      padding: 1.5rem;
+      border-radius: var(--radius);
+      border: 1px solid var(--border);
+      transition: var(--transition);
+      box-shadow: var(--shadow);
+    }
+    .card:hover { transform: translateY(-8px); box-shadow: 0 16px 40px rgba(0,0,0,0.4); }
+    .card h3 { margin-bottom: 0.5rem; color: var(--accent); }
+    .tags {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 0.5rem;
+      margin-top: 1rem;
+    }
+    .tag {
+      background: rgba(88,166,255,0.1);
+      color: var(--accent);
+      padding: 0.25rem 0.75rem;
+      border-radius: 1rem;
+      font-size: 0.8rem;
+      font-weight: 500;
+    }
 
-### 🏆 Certifications
-- **Certified in Cybersecurity (CC)** – ISC²  
-- **The Complete Ethical Hacking Course** – Udemy  
-- **Cybersecurity Fundamentals** – IBM SkillsBuild  
-- **Python for Beginners** – SoloLearn  
-- **Pre Security Learning Path** – TryHackMe  
-- **Preparing:** CompTIA Network+, BSCP, eJPT
+    /* === PROJECTS === */
+    .project-card {
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+    }
+    .project-links {
+      margin-top: 1rem;
+      display: flex;
+      gap: 0.75rem;
+    }
 
----
+    /* === FOOTER === */
+    footer {
+      text-align: center;
+      padding: 3rem 0;
+      color: var(--text-muted);
+      font-size: 0.9rem;
+      border-top: 1px solid var(--border);
+    }
 
-### 💼 Experience
-**Penetration Tester** – *Hoarus Consultancy Pvt. Ltd.*, Panjim, Goa (2023–Present)  
-- Conducted **wireless & network pen tests** → identified **10+ critical vulns/assessment**  
-- Built **secure IoT solutions** using **MQTT**  
-- Contributed to **LLM security** via preprocessing & vuln analysis  
-- Developed **client-facing secure website** (HTML/CSS/JS)
+    /* === MOBILE === */
+    @media (max-width: 768px) {
+      h1 { font-size: 2.2rem; }
+      .nav-links { display: none; }
+      .hero { padding: 4rem 0; }
+    }
+  </style>
+</head>
+<body>
 
----
+  <!-- HEADER -->
+  <header>
+    <div class="container">
+      <nav>
+        <div class="logo">Gordon Gomes</div>
+        <div class="nav-links">
+          <a href="#about">About</a>
+          <a href="#experience">Experience</a>
+          <a href="#projects">Projects</a>
+          <a href="#certifications">Certs</a>
+          <a href="#contact">Contact</a>
+        </div>
+        <button class="theme-toggle" onclick="toggleTheme()" aria-label="Toggle theme">
+          <i class="fas fa-moon"></i>
+        </button>
+      </nav>
+    </div>
+  </header>
 
-### 🚀 Featured Projects
-| Project | Description | Tech | Links |
-|-------|-----------|------|-------|
-| **AutoPentest-CLI** | AI-enhanced ethical hacking automation (Nmap + Metasploit + ZAP) with **Llama3 report generation** → **20% faster analysis** | Python, Ollama, Llama3 | [![GitHub](https://img.shields.io/badge/GitHub-Repo-blue?logo=github)](https://github.com/yourusername/AutoPentest-CLI) |
-| **LLM Threat Detector** | Fine-tuned model for **phishing & vuln detection** → **15% accuracy boost** using **Grok-generated data** | Hugging Face, TensorFlow | [![GitHub](https://img.shields.io/badge/GitHub-Repo-blue?logo=github)](https://github.com/yourusername/LLM-Threat-Detector) |
-| **ESP32-CAM Surveillance** | Real-time wireless camera with **web UI** over local network | C, ESP32-CAM | [![GitHub](https://img.shields.io/badge/GitHub-Repo-blue?logo=github)](https://github.com/yourusername/ESP32-CAM-Surveillance) |
+  <!-- HERO -->
+  <section class="hero">
+    <div class="container">
+      <h1>Gordon Antonio Erasmo Gomes</h1>
+      <p>Junior Penetration Tester | AI-Driven Cybersecurity | IoT Security Enthusiast</p>
+      <p>📍 Panjim, Goa, India | Building secure systems with code, AI, and ethical hacking.</p>
 
----
+      <div class="social-links">
+        <a href="mailto:gordon.gomes777@gmail.com" target="_blank"><i class="fas fa-envelope"></i></a>
+        <a href="tel:+919168585974"><i class="fas fa-phone"></i></a>
+        <a href="https://linkedin.com/in/yourprofile" target="_blank"><i class="fab fa-linkedin"></i></a>
+        <a href="https://tryhackme.com/p/yourhandle" target="_blank"><i class="fas fa-shield-alt"></i></a>
+        <a href="https://github.com/yourusername" target="_blank"><i class="fab fa-github"></i></a>
+      </div>
 
-### 🎯 Job Simulations (Extracurricular)
-- **Tata Consultancy Services** – IAM & Cybersecurity Consulting  
-- **AWS** – Scalable Elastic Beanstalk Architecture Design  
-- **Deloitte Australia** – Web Log Analysis & Breach Response  
+      <a href="#contact" class="btn">Get in Touch</a>
+      <a href="https://github.com/yourusername" target="_blank" class="btn btn-outline">View GitHub</a>
+    </div>
+  </section>
 
----
+  <!-- ABOUT -->
+  <section id="about">
+    <div class="container">
+      <h2>About Me</h2>
+      <p>
+        Cybersecurity professional with expertise in <strong>wireless & network penetration testing</strong>, 
+        <strong>vulnerability assessment</strong>, and <strong>AI-driven threat detection</strong>. 
+        Proficient in Nmap, Metasploit, Burp Suite, and securing IoT systems. 
+        Currently optimizing LLMs for phishing detection and automated pentesting.
+      </p>
+      <p>Passionate about open-source security tools and teaching ethical hacking.</p>
+    </div>
+  </section>
 
-### 📚 Education
-**Bachelor in Computer Applications** – *Rosary College of Commerce & Arts, Goa*  
-CGPA: **7.50**
+  <!-- EXPERIENCE -->
+  <section id="experience" style="background: var(--bg-alt);">
+    <div class="container">
+      <h2>Experience</h2>
+      <div class="card">
+        <h3>Penetration Tester</h3>
+        <p><strong>Hoarus Consultancy Pvt. Ltd.</strong> • Panjim, Goa • 2023 – Present</p>
+        <ul style="margin: 1rem 0; padding-left: 1.5rem;">
+          <li>Conducted wireless & network pen tests → <strong>10+ critical vulns per assessment</strong></li>
+          <li>Developed secure IoT solutions using <strong>MQTT</strong></li>
+          <li>Contributed to LLM security via preprocessing & vulnerability analysis</li>
+          <li>Built secure client-facing website (HTML/CSS/JS)</li>
+        </ul>
+      </div>
+    </div>
+  </section>
 
----
+  <!-- PROJECTS -->
+  <section id="projects">
+    <div class="container">
+      <h2>Featured Projects</h2>
+      <div class="grid grid-2">
 
-### 📈 GitHub Stats
-![Gordon's GitHub Stats](https://github-readme-stats.vercel.app/api?username=yourusername&show_icons=true&theme=radical&hide_border=true)  
-![Top Languages](https://github-readme-stats.vercel.app/api/top-langs/?username=yourusername&layout=compact&theme=radical&hide_border=true)
+        <div class="card project-card">
+          <h3>AutoPentest-CLI</h3>
+          <p>AI-enhanced ethical hacking automation integrating Nmap, Metasploit, and OWASP ZAP. Uses <strong>Llama3</strong> to generate reports → <strong>20% faster analysis</strong>.</p>
+          <div class="tags">
+            <span class="tag">Python</span>
+            <span class="tag">Ollama</span>
+            <span class="tag">Llama3</span>
+            <span class="tag">Automation</span>
+          </div>
+          <div class="project-links">
+            <a href="https://github.com/yourusername/AutoPentest-CLI" target="_blank" class="btn btn-outline">
+              <i class="fab fa-github"></i> Code
+            </a>
+          </div>
+        </div>
 
----
+        <div class="card project-card">
+          <h3>LLM Threat Detector</h3>
+          <p>Fine-tuned model for phishing email & vuln detection → <strong>15% accuracy boost</strong>. Used <strong>Grok</strong> for data generation.</p>
+          <div class="tags">
+            <span class="tag">Hugging Face</span>
+            <span class="tag">TensorFlow</span>
+            <span class="tag">NLP</span>
+            <span class="tag">Grok</span>
+          </div>
+          <div class="project-links">
+            <a href="https://github.com/yourusername/LLM-Threat-Detector" target="_blank" class="btn btn-outline">
+              <i class="fab fa-github"></i> Code
+            </a>
+          </div>
+        </div>
 
-> **"Security is not a product, but a process."** – Bruce Schneier  
-> Open to **pen-testing gigs, AI-security research, and open-source collaboration**.
+        <div class="card project-card">
+          <h3>ESP32-CAM Surveillance</h3>
+          <p>Real-time wireless camera system with web UI. Programmed in C for efficient streaming over local network.</p>
+          <div class="tags">
+            <span class="tag">C</span>
+            <span class="tag">IoT</span>
+            <span class="tag">ESP32</span>
+            <span class="tag">Web UI</span>
+          </div>
+          <div class="project-links">
+            <a href="https://github.com/yourusername/ESP32-CAM-Surveillance" target="_blank" class="btn btn-outline">
+              <i class="fab fa-github"></i> Code
+            </a>
+          </div>
+        </div>
 
----
+      </div>
+    </div>
+  </section>
 
-*Last updated: November 2025*
+  <!-- CERTIFICATIONS -->
+  <section id="certifications" style="background: var(--bg-alt);">
+    <div class="container">
+      <h2>Certifications</h2>
+      <div class="grid grid-2">
+        <div class="card">
+          <h3>Certified in Cybersecurity (CC)</h3>
+          <p><strong>ISC²</strong></p>
+        </div>
+        <div class="card">
+          <h3>The Complete Ethical Hacking Course</h3>
+          <p><strong>Udemy</strong></p>
+        </div>
+        <div class="card">
+          <h3>Cybersecurity Fundamentals</h3>
+          <p><strong>IBM SkillsBuild</strong></p>
+        </div>
+        <div class="card">
+          <h3>Pre Security Learning Path</h3>
+          <p><strong>TryHackMe</strong></p>
+        </div>
+      </div>
+      <p style="text-align: center; margin-top: 1.5rem; color: var(--success);">
+        <strong>Preparing:</strong> CompTIA Network+, BSCP, eJPT
+      </p>
+    </div>
+  </section>
+
+  <!-- CONTACT -->
+  <section id="contact">
+    <div class="container" style="text-align: center;">
+      <h2>Let's Connect</h2>
+      <p>Available for pentesting, AI-security research, and open-source collaboration.</p>
+      <a href="mailto:gordon.gomes777@gmail.com" class="btn" style="margin-top: 1rem;">
+        <i class="fas fa-envelope"></i> Email Me
+      </a>
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer>
+    <div class="container">
+      <p>&copy; 2025 Gordon Antonio Erasmo Gomes. Built with code and curiosity.</p>
+      <p>Last updated: November 2025</p>
+    </div>
+  </footer>
+
+  <!-- Theme Toggle Script -->
+  <script>
+    function toggleTheme() {
+      const body = document.body;
+      const current = body.getAttribute('data-theme');
+      const newTheme = current === 'light' ? 'dark' : 'light';
+      body.setAttribute('data-theme', newTheme);
+      localStorage.setItem('theme', newTheme);
+      document.querySelector('.theme-toggle i').classList.toggle('fa-moon');
+      document.querySelector('.theme-toggle i').classList.toggle('fa-sun');
+    }
+
+    // Load saved theme
+    const savedTheme = localStorage.getItem('theme') || 'dark';
+    document.body.setAttribute('data-theme', savedTheme);
+    if (savedTheme === 'light') {
+      document.querySelector('.theme-toggle i').classList.replace('fa-moon', 'fa-sun');
+    }
+  </script>
+
+</body>
+</html>
